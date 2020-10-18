@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<librarycatalogue>
+    <book catalogue="cookery">
+        <ISBN>65432100</ISBN>
+        <title>Domestic Goddess</title>
+        <author>Nigella Lawson</author>
+    </book>
+    <book catalogue="cookery">
+        <ISBN>88100880</ISBN>
+        <title>How to avoid cooking altogether</title>
+        <author>Janes Hadenough</author>
+    </book>
+    <book catalogue="technical">
+        <ISBN>95432100</ISBN>
+        <title>An exploration of Infinity</title>
+        <author>Fiona Neverendingly</author>
+    </book>
+    <book catalogue="technical">
+        <ISBN>75432100</ISBN>
+        <title>Beginners Guide to Addition</title>
+        <author>Harry Adding</author>
+    </book>
+</librarycatalogue>
