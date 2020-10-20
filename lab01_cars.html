@@ -1,19 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Lab Cars</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    <title>Lab Cars</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
 crossorigin="anonymous">
 </head>
 <body>
     <h1>Cars</h1>
-    <!-- //it needs an action & a method.
-    // an action is the file it will call
-    // a method is the  -->
-	<form action="testingtables.html" method="GET">
-        <button>go</button>
-        <h1>All Cars</h1>
-        <table class="table">
+    <div>create button</div>
+    <h1>All Cars</h1>
+    <div>table
+        <table class="table" >
             <tr>
                 <th>reg</th>
                 <th>make</th>
@@ -25,7 +22,7 @@ crossorigin="anonymous">
             <tr>
                 <td>191 M 123</td>
                 <td>Ford</td>
-                <td>Modeo</td>
+                <td>Mondeo</td>
                 <td>25,000</td>
                 <td>update</td>
                 <td>delete</td>
@@ -46,25 +43,27 @@ crossorigin="anonymous">
                 <td>update</td>
                 <td>delete</td>
             </tr>
-
         </table>
-        <h2><span>Create a</span> <span>Update this</span> Car</h2>
-        <label for="freg">Reg</label><br>
-        <input type= "text" name="freg" placeholder="enter the reg number"><br>
-        <label for="fmake">Make</label><br>
-        <select name="fmake">
-            <option value="Ford">Ford</option>
-            <option value="Fiat">Fiat</option>
-            <option value="Nissan">Nissan</option>
-        </select><br>
-        <label for="fmodel">model</label><br>
-        <input type= "text" name="fmodel"><br>
-        <label for="fprice">price</label><br>
-        <input type= "number" name="fprice">
-        <br> <span><button>Create</button></span> 
-        <span><button>Update</button></span>
-        
-    </form>
+    </div>
+    <div>
+        <form>
+            <h2><span>Create or</span> <span>Update this</span> Car</h2>
+            <label for="freg">Reg</label><br>
+            <input type= "text" name="freg" placeholder="enter the reg number"><br>
+            <label for="fmake">Make</label><br>
+            <select name="fmake">
+                <option value="Ford">Ford</option>
+                <option value="Fiat">Fiat</option>
+                <option value="Nissan">Nissan</option>
+            </select><br>
+            <label for="fmodel">model</label><br/>
+            <input type= "text" name="fmodel"><br/>
+            <label for="fprice">price</label><br/>
+            <input type= "number" name="fprice"><br/>
+            <span><button>Create</button></span> 
+            <span><button>Update</button></span>
+        </form>
+    </div>
 
 </body>
 </html>
