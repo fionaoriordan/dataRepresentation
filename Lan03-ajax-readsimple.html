@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+        <title>lab3 using jquery AJAX to extract Euro price</title>
+    </head>
+<body>
+    <button onclick="readJSON()">go</button>
+    <div id="output"></div>
+    <script>
+        function readJSON(){
+            console.log("look inside the readJSON function")
+            $.ajax({
+                "url": "https://api.coindesk.com/v1/bpi/currentprice.json",
+                    "method":"GET",
+                    "data":"",
+                    "dataType": "JSON",
+                    "success":function(result){
+                        var eurorate = result.bpi.EUR.rate;
+                        var usdrate = result.bpi.USD.rate;
+                        var gbprate = result.bpi.GBP.rate;
+                        console.log(eurorate, usdrate, gbprate);
+                        document.getElementById("output").innerText = 
+                        "Euro: " +eurorate +"; " + "USD: " + usdrate +"; " + "GBP: " + gbprate;
+                    },
+                    "error":function(xhr,status,error){
+                        console.log("error: "+status+" msg:"+error);
+                    }
+                });
+            }
+    </script>
+</body>
+
+</html>
