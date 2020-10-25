@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+	<title>week 4 Lab01 simple JSOn </title>
+	
+</head>
+<body>
+    <button onclick="readJSON()">go</button> 
+    <div id="output"></div>
+    <script>
+        function readJSON(){
+            var obj = {
+                "isbn":1234567,
+                "Author": "Andrew Beatty",
+                "Title" : "the emptness of ping-pong balls" }
+            console.log(obj.Title)
+            document.getElementById("output").innerText = obj.Title
+        }                           
+    </script>
+</body>
+</html>
+ 

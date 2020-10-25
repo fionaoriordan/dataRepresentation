@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <title>week 4 Lab02 JSON array </title>
+
+</head>
+
+<body>
+    <button onclick="displayJSON()">go</button>
+    <div id="output"></div>
+    <script>
+        function displayJSON() {
+            var obj = JSON.parse('{"employees": [{ "firstName": "John", "lastName": "Doe"},{ "firstName": "Anna", "lastName": "Smith" }, {"firstName": "Peter", "lastName": "Jones" }] }')
+
+
+            for (employee of obj.employees){
+                 console.log(employee.firstName)
+                 
+                 }
+            
+        }       
+                           
+    </script>
+</body>
+
+</html>
