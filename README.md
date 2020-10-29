@@ -32,4 +32,11 @@ ___
 
 1.[week5 lab05.1 CURL ](curl.txt)  
 
+2.[week5 lab05.2 simpleserver.py ](simpleserver.py)  
+
+3.[week5 lab05.2 restserver.py ](restserver.py)  
+
+4.[week5 lab05.2 index.html ](index.html)  
+
+
 ___
