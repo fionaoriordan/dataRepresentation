@@ -1,0 +1,36 @@
+<html>
+    <head><title>week5 test Update</title></head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <body>
+        <div>enter the car reg <input id="reg" type="text"></br/>
+                enter the car new price <input id="nprice" type="text">
+        
+        </div>
+        
+        <button onclick="callUpdate()">Test Update</button>
+    </body>
+    <script>
+        function callUpdate(){
+            //create a variable with the new car
+            var reg = document.getElementById("reg").value;
+            var car = {price: 232};
+
+            $.ajax({
+                url: "http://127.0.0.1:5000/cars/"+encodeURI(reg),
+                method: "PUT",
+                //data is the variable car above.
+                data: JSON.stringify(car),
+                dataType: "JSON",
+                contentType: "application/json; charset-utf-8",
+                success: function(result){      
+                    // see the result in the console
+                        console.log(result);
+                }, 
+                error: function(xhr, status, error){
+                    console.log("Error " +status+ " msg: "+ error);
+                }  
+            });
+        }
+        
+    </script>
+</html>

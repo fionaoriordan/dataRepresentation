@@ -1,0 +1,63 @@
+<html>
+    <head><title>week5 testget</title></head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <body>
+        hi
+        <button onclick="getall()">go</button>
+        <h1>All Cars</h1>
+        <div>table
+            <table class="table" id="carTable" >
+                <tr>
+                    <th>reg</th>
+                    <th>make</th>
+                    <th>mode</th>
+                    <th>price</th>
+                    <th>Update</th>
+                    <th>delete</th>
+                </tr>
+            </table>
+        </div>
+    </body>
+    <script>
+        function getall(){
+            $.ajax({
+                url: "http://127.0.0.1:5000/cars",
+                method: "GET",
+                data: "",
+                dataType: "JSON",
+                success: function(result){
+                    for (car of result.cars){
+                        addCarToTable(car);
+                        console.log(car);
+                    }
+                }, 
+                error: function(xhr, status, error){
+                    console.log("Error " +status+ " msg: "+ error);
+                }  
+            })
+        }
+        //ading function from wk1 tab to add a new car row to carTable
+        function addCarToTable(car){
+            // section 16 Get the table and add a new row to the end of the table.
+            var tableElement = document.getElementById('carTable') 
+            var rowElement = tableElement.insertRow(-1)
+            // set attribure here
+            var cell1 = rowElement.insertCell(0);
+            cell1.innerHTML = car.reg
+            var cell2 = rowElement.insertCell(1);
+            cell2.innerHTML = car.make
+            var cell3 = rowElement.insertCell(2);
+            cell3.innerHTML = car.model
+            var cell4 = rowElement.insertCell(3);
+            cell4.innerHTML = car.price
+            var cell5 = rowElement.insertCell(4);
+            cell5.innerHTML = '<button onclick="showUpdate(this)">Update</button>' 
+            var cell6 = rowElement.insertCell(5);
+            cell6.innerHTML = '<button onclick=doDelete(this)>delete</button>'
+            rowElement.setAttribute('id',car.reg)
+            console.log("carAdded")
+        
+        }
+    
+    </script>
+</html>
