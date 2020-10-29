@@ -44,10 +44,17 @@ ___
 
 7. [lab05.3 testUpdate.html ](testUpdate.html)  
 
-8. [lab05.3 testDelete.html ](testDelete.html) 
-
-
-
-
-
+8. [lab05.3 testDelete.html ](testDelete.html)  
 ___
+
+### Week6
+1. [lab06.01.01-getJSON.py](lab06.01.01-getJSON.py)  
+
+2. [lab06.01.02-create.py](lab06.01.02-create.py)  
+
+3. [lab06.01.03-update.py](lab06.01.03-update.py)
+
+4. [lab06.01.04-delete.py](lab06.01.04-delete.py)  
+
+5. [lab06.01.05-gitfollowers.py](lab06.01.05-gitfollowers.py)
+
