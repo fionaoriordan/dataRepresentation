@@ -1,0 +1,18 @@
+
+for use at cmd line.
+get all books: 
+curl http://andrewbeatty1.pythonanywhere.com/books
+
+get a specific book
+curl http://andrewbeatty1.pythonanywhere.com/books/9
+
+create: 
+curl -H "Content-Type:application/json" -X POST -d '{"Title":"xxx","Author":"xxx","Price":3000}' http://andrewbeatty1.pythonanywhere.com/books
+
+
+update:
+curl -H "Content-Type:application/json" -X PUT -d '{"Price":2000}' http://andrewbeatty1.pythonanywhere.com/books/56
+
+delete
+curl -X DELETE http://andrewbeatty1.pythonanywhere.com/books/??
+
