@@ -1,5 +1,5 @@
 # dataRepresentation
-GMIT dataRepresentation LABS BY WEEK
+GMIT dataRepresentation labs by week.
 ### Week 1  
 
 1.[lab01_cars.html](lab01_cars.html)  
