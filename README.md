@@ -30,15 +30,20 @@ ___
 ___
 ### Week 5  
 
-1. [week5 lab05.1 CURL ](curl.txt)  
+1. [lab05.1 CURL ](curl.txt)  
 
-2. [week5 lab05.2 simpleserver.py ](simpleserver.py)  
+2. [lab05.2 simpleserver.py ](simpleserver.py)  
 
-3. [week5 lab05.2 restserver.py ](restserver.py)  
+3. [lab05.2 restserver.py ](restserver.py)  
 
-4. [week5 lab05.2 index.html ](index.html)  
+4. [lab05.2 index.html ](index.html)  
 
-5. [week5 lab05.3 testgetall.html ](testgetall.html)  
+5. [lab05.3 testgetall.html ](testgetall.html)  
+
+6. [lab05.3  .html ]( )  
+
+7. [lab05.3  .html ]( ) 
+
 
 
 
