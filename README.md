@@ -10,7 +10,8 @@ ___
 ___
 ### Week 3   
 
-1.[lab03.html](lab03.html)  
+1. [lab03.html](lab03.html)  
+2. [lab03-trains.py](lab03-trains.py)  
 
 ___
 ### Week 4 
